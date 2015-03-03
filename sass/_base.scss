@@ -241,16 +241,16 @@ input[type="search"] {
   padding-right: $baseline-height / 4; /* so safari 'x' doesn't get cut off */
 }
 ::-webkit-input-placeholder {
-  color: $color-gray-light;
+  color: #8a9299;
 }
 :-moz-placeholder /* Firefox 18- */ {
-  color: $color-gray-light;
+  color: #8a9299;
 }
 ::-moz-placeholder /* Firefox 19+ */ {
-  color: $color-gray-light;
+  color: #8a9299;
 }
 :-ms-input-placeholder {
-  color: $color-gray-light;
+  color: #8a9299;
 }
 input[type='search']::-webkit-search-decoration,
 input[type='search']::-webkit-search-cancel-button,

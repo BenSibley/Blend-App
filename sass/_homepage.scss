@@ -23,9 +23,10 @@
     margin-bottom: 24px;
   }
   p {
-    max-width: 660px;
+    max-width: 680px;
     color: $color-gray-light;
-    margin: $baseline-height auto;
+    margin: $baseline-height / 2 auto;
+    font-weight: 300;
   }
   label {
     display: block;
@@ -33,10 +34,15 @@
     margin-top: $baseline-height / 2;
   }
   .signup-form {
-    margin-top: $baseline-height * 2;
+    margin-top: $baseline-height * 1.5;
 
     input {
       outline: none !important;
+      max-width: none !important;
+      background: white !important;
+    }
+    input[type="submit"] {
+      background: $color-green-medium !important;
     }
     .button {
       display: inline-block;
@@ -57,6 +63,10 @@
         color: white;
         background: $color-green-light;
       }
+    }
+    p {
+      @extend %twelve-pixels;
+      margin: 12px auto 0;
     }
   }
 }
@@ -164,6 +174,25 @@
 // 600px
 @media all and (min-width: 37.5em) {
 
+  .intro {
+
+    .signup-form {
+
+      input {
+        max-width: 300px !important;
+        margin-right: -4px;
+      }
+      input[type="submit"] {
+        max-width: 120px !important;
+        vertical-align: top;
+      }
+      .input-container {
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+        width: 420px;
+        margin: 0 auto;
+      }
+    }
+  }
   .benefits {
 
     ul {

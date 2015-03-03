@@ -43,7 +43,7 @@ h3, .social-media-icons a, .search-sidebar i, .benefits h2, .last-call h1 {
   /* 18px */
 }
 
-.post-date {
+.post-date, .intro .signup-form p {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -73,7 +73,7 @@ body {
   padding: 0;
   font-family: "Exo 2", sans-serif;
   line-height: 1.5;
-  color: #536573;
+  color: #8d9499;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
@@ -251,7 +251,7 @@ img,
   margin: 0 0 1.84502em;
   font-size: 0.813em;
   line-height: 1.85;
-  color: #536573;
+  color: #8d9499;
 }
 
 /* Form styles */
@@ -261,7 +261,7 @@ textarea {
   width: 100%;
   max-width: 27.75em;
   background: #f0f4f7;
-  color: #536573;
+  color: #8d9499;
   outline: solid 1px #b3bec7;
   border: none;
   font-family: "Exo 2", sans-serif;
@@ -311,19 +311,19 @@ input[type="search"] {
 }
 
 ::-webkit-input-placeholder {
-  color: #b3bec7;
+  color: #8a9299;
 }
 
 :-moz-placeholder {
-  color: #b3bec7;
+  color: #8a9299;
 }
 
 ::-moz-placeholder {
-  color: #b3bec7;
+  color: #8a9299;
 }
 
 :-ms-input-placeholder {
-  color: #b3bec7;
+  color: #8a9299;
 }
 
 input[type='search']::-webkit-search-decoration,
@@ -604,17 +604,17 @@ a img {
 }
 .post-title a {
   text-decoration: none;
-  color: #536573;
+  color: #8d9499;
 }
 .post-title a:link, .post-title a:visited {
-  color: #536573;
+  color: #8d9499;
 }
 .post-title a:active, .post-title a:hover, .post-title a:focus {
   color: #59b390;
 }
 
 .post-date {
-  color: #536573;
+  color: #8d9499;
 }
 
 .more-link {
@@ -816,10 +816,10 @@ a img {
   margin-left: 8px;
 }
 .social-media-icons a {
-  color: #536573;
+  color: #8d9499;
 }
 .social-media-icons a:link, .social-media-icons a:visited {
-  color: #536573;
+  color: #8d9499;
 }
 .social-media-icons a:hover, .social-media-icons a:active, .social-media-icons a:focus {
   color: #59b390;
@@ -867,7 +867,7 @@ a img {
   margin: 0;
   padding: 0;
   border: none;
-  color: #536573;
+  color: #8d9499;
   -webkit-transition: -webkit-transform 0.15s ease-in-out;
   transition: transform 0.15s ease-in-out;
 }
@@ -1090,10 +1090,10 @@ li.comment ul {
 }
 .comment-author a {
   text-decoration: none;
-  color: #536573;
+  color: #8d9499;
 }
 .comment-author a:link, .comment-author a:visited {
-  color: #536573;
+  color: #8d9499;
 }
 .comment-author a:hover, .comment-author a:active, .comment-author a:focus {
   color: #59b390;
@@ -1110,7 +1110,7 @@ li.comment ul {
 .comment-reply-link:before,
 .comment-edit-link:before {
   content: '|';
-  color: #536573;
+  color: #8d9499;
   margin-right: 4px;
 }
 
@@ -1159,9 +1159,10 @@ li.comment ul {
   margin-bottom: 24px;
 }
 .intro p {
-  max-width: 660px;
+  max-width: 680px;
   color: #b3bec7;
-  margin: 1.5em auto;
+  margin: 0.75em auto;
+  font-weight: 300;
 }
 .intro label {
   display: block;
@@ -1169,10 +1170,15 @@ li.comment ul {
   margin-top: 0.75em;
 }
 .intro .signup-form {
-  margin-top: 3em;
+  margin-top: 2.25em;
 }
 .intro .signup-form input {
   outline: none !important;
+  max-width: none !important;
+  background: white !important;
+}
+.intro .signup-form input[type="submit"] {
+  background: #59b390 !important;
 }
 .intro .signup-form .button {
   display: inline-block;
@@ -1189,6 +1195,9 @@ li.comment ul {
 .intro .signup-form .button:hover, .intro .signup-form .button:active, .intro .signup-form .button:focus {
   color: white;
   background: #61c29d;
+}
+.intro .signup-form p {
+  margin: 12px auto 0;
 }
 
 .primary-image {
@@ -1276,6 +1285,20 @@ li.comment ul {
 }
 
 @media all and (min-width: 37.5em) {
+  .intro .signup-form input {
+    max-width: 300px !important;
+    margin-right: -4px;
+  }
+  .intro .signup-form input[type="submit"] {
+    max-width: 120px !important;
+    vertical-align: top;
+  }
+  .intro .signup-form .input-container {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    width: 420px;
+    margin: 0 auto;
+  }
+
   .benefits ul {
     margin: 3em 0 1.5em;
   }
@@ -1360,13 +1383,13 @@ li.comment ul {
   display: inline-block;
   margin: 0 1.5em 0.75em 0;
   text-decoration: none;
-  color: #536573;
+  color: #8d9499;
 }
 .archive-header a:link, .archive-header a:visited {
-  color: #536573;
+  color: #8d9499;
 }
 .archive-header a:hover, .archive-header a:active, .archive-header a:focus {
-  color: #536573;
+  color: #8d9499;
 }
 .archive-header a.current {
   font-weight: 700;
