@@ -22,14 +22,14 @@ h1, .intro h1 {
   /* 51px */
 }
 
-h2, .post-title, .comments-number h3, .comment-reply-title, .benefits h1, .features h1 {
+h2, .post-title, .comments-number h3, .comment-reply-title {
   font-size: 1.75em;
   /* 28px / 16px */
   line-height: 1.321;
   /* 37px */
 }
 
-h3, .social-media-icons a, .search-sidebar i, .benefits h2, .last-call h1 {
+h3, .social-media-icons a, .search-sidebar i {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -74,6 +74,7 @@ body {
   font-family: "Exo 2", sans-serif;
   line-height: 1.5;
   color: #8d9499;
+  background: #152b3c;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
@@ -90,15 +91,8 @@ body {
   min-height: 100%;
   background: #273947;
   padding: 0 3.125%;
-}
-.overflow-container:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 75vh;
-  background: #304657;
+  max-width: 1314px;
+  margin: 0 auto;
 }
 
 .main {
@@ -425,6 +419,12 @@ a img {
     padding: 0 15.625%;
   }
 }
+@media all and (min-width: 82.125em) {
+  .overflow-container {
+    padding: 0 205px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+  }
+}
 .site-header {
   position: relative;
   z-index: 19;
@@ -439,10 +439,6 @@ a img {
   visibility: hidden;
   line-height: 0;
   height: 0;
-}
-
-.stripe-helpscout {
-  display: none;
 }
 
 .menu-primary {
@@ -504,12 +500,6 @@ a img {
 
   .toggle-navigation {
     display: none;
-  }
-
-  .stripe-helpscout {
-    display: inline-block;
-    height: 24px;
-    float: right;
   }
 
   .menu-primary {
@@ -1152,6 +1142,9 @@ li.comment ul {
 .page-template-homepage .overflow-container {
   height: 100vh;
 }
+.page-template-homepage .main {
+  margin-bottom: 0;
+}
 .page-template-homepage .site-footer {
   display: none;
 }
@@ -1171,7 +1164,7 @@ li.comment ul {
 .intro p {
   max-width: 680px;
   color: #b3bec7;
-  margin: 0.75em auto;
+  margin: 0 auto;
   font-weight: 300;
 }
 .intro label {
@@ -1211,90 +1204,23 @@ li.comment ul {
 }
 
 .primary-image {
-  margin-top: 3em;
+  margin-top: 2.25em;
   width: 100%;
-  box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
 }
 
-.benefits {
-  position: relative;
-  z-index: 9;
-  margin-top: -6px;
-  background: #304657;
-  text-align: center;
-  color: white;
-  padding: 0 1.5em;
-}
-.benefits h2 {
-  font-weight: 600;
-}
-.benefits ul {
-  list-style: none;
-  margin: 1.5em 0;
-}
-.benefits li {
-  margin: 3em 0;
-}
-.benefits li:last-child {
-  margin-bottom: 0;
-}
-.benefits p {
-  color: #f0f4f7;
-}
-.benefits svg {
-  margin-bottom: 1.5em;
-}
-
-#benefits,
-#features {
-  padding-top: 1.5em;
-  padding-bottom: 2.25em;
-}
-
-.features {
-  text-align: center;
-  background: white;
-  padding: 0 1.5em;
-}
-.features h2 {
-  font-size: 1em;
-  line-height: 1.5;
-  font-weight: 600;
-}
-.features p {
-  color: #304657;
-}
-.features ul {
-  list-style: none;
-  margin: 2.25em 0 0;
-}
-.features li {
-  margin: 1.5em 0;
-}
-
-.last-call {
-  background: #304657;
-  color: white;
-  text-align: center;
-}
-.last-call label {
+.stripe-helpscout {
   display: none;
-}
-.last-call .signup-form {
-  margin-top: 1.5em;
-}
-.last-call input {
-  background: white;
-  border: none;
-}
-.last-call input[type="submit"] {
-  background: #59b390;
-}
-.last-call input[type="submit"]:hover {
-  background: #61c29d;
 }
 
 @media all and (min-width: 37.5em) {
+  .intro .signup-form {
+    position: relative;
+    left: -7%;
+    width: 114%;
+    background: #304657;
+    padding: 1.5em;
+  }
   .intro .signup-form input {
     max-width: 300px !important;
     margin-right: -4px;
@@ -1309,46 +1235,21 @@ li.comment ul {
     margin: 0 auto;
   }
 
-  .benefits ul {
-    margin: 3em 0 1.5em;
-  }
-  .benefits li {
-    display: inline-block;
-    vertical-align: top;
-    width: 30.9375%;
-    margin: 0;
-  }
-  .benefits li:first-child {
-    margin-top: 24px;
-  }
-  .benefits li:nth-child(2) {
-    margin: 0 1.5625%;
-  }
-
-  #benefits,
-  #features {
-    padding-top: 3em;
-    padding-bottom: 3.75em;
-  }
-
-  .features ul {
-    margin: 3.75em 0 0;
-    text-align: left;
-  }
-  .features li {
-    display: inline-block;
-    vertical-align: top;
-    width: 27.5%;
-    margin: 0;
-  }
-  .features li:nth-child(3n - 2), .features li:nth-child(3n - 1) {
-    margin-right: 6.875%;
-    margin-bottom: 1.5em;
-  }
-
   .page-template-homepage input[type='submit'] {
     max-width: 100px;
     margin-top: 0;
+  }
+
+  .stripe-helpscout {
+    display: block;
+    height: 32px;
+    margin: 0 auto 20px;
+  }
+}
+@media all and (min-width: 43.75em) {
+  .intro .signup-form {
+    left: -11.5%;
+    width: 123%;
   }
 }
 @media all and (min-width: 56.25em) {
@@ -1359,28 +1260,22 @@ li.comment ul {
   .page-template-homepage .main {
     padding: 0;
   }
+
+  .intro .signup-form {
+    left: -17%;
+    width: 134%;
+  }
 }
-@media all and (min-width: 62.5em) {
-  .intro {
-    margin-top: 3em;
+@media all and (min-width: 68.75em) {
+  .intro .signup-form {
+    left: -23%;
+    width: 146%;
   }
-  .intro h1 {
-    font-size: 3em;
-    line-height: 1.25em;
-  }
-
-  .primary-image {
-    margin-top: 4.5em;
-  }
-
-  .benefits h1 {
-    font-size: 2.3125em;
-    line-height: 1.297em;
-  }
-
-  .features h1 {
-    font-size: 2.3125em;
-    line-height: 1.297em;
+}
+@media all and (min-width: 82.125em) {
+  .intro .signup-form {
+    width: 1314px;
+    left: -207px;
   }
 }
 .archive-header {

@@ -15,6 +15,7 @@ body {
   font-family: $primary-font-stack;
   line-height: 1.5;
   color: $color-gray-medium;
+  background: $color-blue-dark;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
@@ -29,16 +30,8 @@ body {
   min-height: 100%;
   background: $color-blue-medium-dark;
   padding: 0 $column;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 75vh;
-    background: $color-blue-medium;
-  }
+  max-width: 1314px;
+  margin: 0 auto;
 }
 .main {
   position: relative;
@@ -359,5 +352,14 @@ a img {
 
   .overflow-container {
     padding: 0 $column * 5;
+  }
+}
+
+// 1314px
+@media all and (min-width: 82.125em) {
+
+  .overflow-container {
+    padding: 0 205px;
+    box-shadow: 0 0 24px 0 rgba(0,0,0,0.2);
   }
 }

@@ -28,7 +28,6 @@
 <!--	</button>-->
 
 <!--	--><?php //get_template_part( 'menu', 'primary' ); ?>
-	<img class="stripe-helpscout" src="<?php echo trailingslashit(get_template_directory_uri()); ?>assets/images/stripe-helpscout.png" />
 
 </header>
 <section id="main" class="main" role="main">

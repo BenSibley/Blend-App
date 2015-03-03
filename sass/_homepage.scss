@@ -3,6 +3,9 @@
   .overflow-container {
     height: 100vh;
   }
+  .main {
+    margin-bottom: 0;
+  }
   .site-footer {
     display: none;
   }
@@ -25,7 +28,7 @@
   p {
     max-width: 680px;
     color: $color-gray-light;
-    margin: $baseline-height / 2 auto;
+    margin: 0 auto;
     font-weight: 300;
   }
   label {
@@ -71,105 +74,13 @@
   }
 }
 .primary-image {
-  margin-top: $baseline-height * 2;
+  margin-top: $baseline-height * 1.5;
   width: 100%;
-  box-shadow: 0 0 48px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 0 24px 0 rgba(0,0,0,0.3);
 }
-.benefits {
-  position: relative;
-  z-index: 9;
-  margin-top: -6px;
-  background: $color-blue-medium;
-  text-align: center;
-  color: white;
-  padding: 0 $baseline-height;
-
-  h1 {
-    @extend %twenty-eight-pixels;
-  }
-  h2 {
-    @extend %twenty-one-pixels;
-    font-weight: 600;
-  }
-  ul {
-    list-style: none;
-    margin: $baseline-height 0;
-  }
-  li {
-    margin: $baseline-height * 2 0;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  p {
-    color: $color-off-white;
-  }
-  svg {
-    margin-bottom: $baseline-height;
-  }
+.stripe-helpscout {
+  display: none;
 }
-// required specificity
-#benefits,
-#features {
-  padding-top: $baseline-height;
-  padding-bottom: $baseline-height * 1.5;
-}
-.features {
-  text-align: center;
-  background: white;
-  padding: 0 $baseline-height;
-
-  h1 {
-    @extend %twenty-eight-pixels;
-  }
-  h2 {
-    font-size: 1em;
-    line-height: 1.5;
-    font-weight: 600;
-  }
-  p {
-    color: $color-blue-medium;
-  }
-  ul {
-    list-style: none;
-    margin: $baseline-height * 1.5 0 0;
-  }
-  li {
-    margin: $baseline-height 0;
-  }
-}
-.last-call {
-  background: $color-blue-medium;
-  color: white;
-  text-align: center;
-
-  h1 {
-    @extend %twenty-one-pixels;
-  }
-  label {
-    display: none;
-  }
-  .signup-form {
-    margin-top: $baseline-height;
-  }
-  input {
-    background: white;
-    border: none;
-  }
-  input[type="submit"] {
-    background: $color-green-medium; // to override above CSS
-
-    &:hover {
-      background: $color-green-light;
-    }
-  }
-}
-//.max-width {
-//  width: 87.5%;
-//  max-width: 1120px;
-//  margin: 0 auto;
-//}
 
 // 600px
 @media all and (min-width: 37.5em) {
@@ -177,6 +88,11 @@
   .intro {
 
     .signup-form {
+      position: relative;
+      left: -7%;
+      width: 114%;
+      background: $color-blue-medium;
+      padding: $baseline-height;
 
       input {
         max-width: 300px !important;
@@ -193,57 +109,28 @@
       }
     }
   }
-  .benefits {
-
-    ul {
-      margin: $baseline-height * 2 0 $baseline-height;
-    }
-    // 1.14 modifier since parent is 87.5% of screen width
-    li {
-      display: inline-block;
-      vertical-align: top;
-      width: $column * 9 * 1.1;
-      margin: 0;
-
-      &:first-child {
-        margin-top: 24px; // icon 24px shorter than others
-      }
-      &:nth-child(2) {
-        margin: 0 $column / 2;
-      }
-    }
-  }
-  // required specificity
-  #benefits,
-  #features {
-    padding-top: $baseline-height * 2;
-    padding-bottom: $baseline-height * 2.5;
-  }
-  .features {
-
-    ul {
-      margin: $baseline-height * 2.5 0 0;
-      text-align: left;
-    }
-    // 1.14 modifier since parent is 87.5% of screen width
-    li {
-      display: inline-block;
-      vertical-align: top;
-      width: $column * 8 * 1.1;
-      margin: 0;
-
-      &:nth-child(3n - 2),
-      &:nth-child(3n - 1) {
-        margin-right: $column * 2 * 1.1;
-        margin-bottom: $baseline-height;
-      }
-    }
-  }
   .page-template-homepage {
 
     input[type='submit'] {
       max-width: 100px;
       margin-top: 0;
+    }
+  }
+  .stripe-helpscout {
+    display: block;
+    height: 32px;
+    margin: 0 auto 20px;
+  }
+}
+
+// 700px
+@media all and (min-width: 43.75em) {
+
+  .intro {
+
+    .signup-form {
+      left: -11.5%;
+      width: 123%;
     }
   }
 }
@@ -261,34 +148,36 @@
       padding: 0;
     }
   }
+  .intro {
+
+    .signup-form {
+      left: -17%;
+      width: 134%;
+    }
+  }
 }
 
-// 1000px
-@media all and (min-width: 62.5em) {
+// 1100px
+@media all and (min-width: 68.75em) {
 
   .intro {
-    margin-top: $baseline-height * 2;
 
-    h1 {
-      font-size: 3em; // 48px
-      line-height: 1.25em; // 60px
+    .signup-form {
+      left: -23%;
+      width: 146%;
     }
   }
-  .primary-image {
-    margin-top: $baseline-height * 3;
-  }
-  .benefits {
+}
 
-    h1 {
-      font-size: 2.3125em; // 37px
-      line-height: 1.297em; // 48px
-    }
-  }
-  .features {
+// 1314px
+@media all and (min-width: 82.125em) {
 
-    h1 {
-      font-size: 2.3125em; // 37px
-      line-height: 1.297em; // 48px
+  .intro {
+
+    .signup-form {
+      width: 1314px;
+      left: -207px;
+
     }
   }
 }
