@@ -441,6 +441,10 @@ a img {
   height: 0;
 }
 
+.stripe-helpscout {
+  display: none;
+}
+
 .menu-primary {
   clear: both;
   max-height: 0;
@@ -500,6 +504,12 @@ a img {
 
   .toggle-navigation {
     display: none;
+  }
+
+  .stripe-helpscout {
+    display: inline-block;
+    height: 24px;
+    float: right;
   }
 
   .menu-primary {

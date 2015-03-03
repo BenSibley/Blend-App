@@ -9,6 +9,9 @@
     @include clearfix;
   }
 }
+.stripe-helpscout {
+  display: none;
+}
 .menu-primary {
   clear: both;
   max-height: 0;
@@ -74,6 +77,11 @@
   }
   .toggle-navigation {
     display: none;
+  }
+  .stripe-helpscout {
+    display: inline-block;
+    height: 24px;
+    float: right;
   }
   .menu-primary {
     max-height: none;
