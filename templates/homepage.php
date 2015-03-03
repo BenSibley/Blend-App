@@ -14,6 +14,6 @@
 		<?php echo blend_app_signup_form(); ?>
 		<p>Signup to get early access to the app.</p>
 	</div>
-	<img class="primary-image" src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/screenshot.png'; ?>" />
+	<img class="primary-image" src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/primary-image.png'; ?>" />
 </section>
 <?php get_footer(); ?>

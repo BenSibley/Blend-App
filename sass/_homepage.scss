@@ -1,8 +1,5 @@
 .page-template-homepage {
 
-  .overflow-container {
-    height: 100vh;
-  }
   .main {
     margin-bottom: 0;
   }
@@ -18,6 +15,7 @@
   margin-top: $baseline-height;
   text-align: center;
   color: white;
+  line-height: 0;
 
   h1 {
     @extend %thirty-seven-pixels;
@@ -30,6 +28,7 @@
     color: $color-gray-light;
     margin: 0 auto;
     font-weight: 300;
+    line-height: 1.5;
   }
   label {
     display: block;

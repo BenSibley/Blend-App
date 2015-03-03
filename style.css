@@ -1139,9 +1139,6 @@ li.comment ul {
     margin: 1.5em 0 3em;
   }
 }
-.page-template-homepage .overflow-container {
-  height: 100vh;
-}
 .page-template-homepage .main {
   margin-bottom: 0;
 }
@@ -1157,6 +1154,7 @@ li.comment ul {
   margin-top: 1.5em;
   text-align: center;
   color: white;
+  line-height: 0;
 }
 .intro h3 {
   margin-bottom: 24px;
@@ -1166,6 +1164,7 @@ li.comment ul {
   color: #b3bec7;
   margin: 0 auto;
   font-weight: 300;
+  line-height: 1.5;
 }
 .intro label {
   display: block;
