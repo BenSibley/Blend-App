@@ -458,65 +458,22 @@ function blend_app_output_svg($svg) {
     return $svg;
 }
 
-// for keyword multiplier
-function return_keyword_modifiers($return) {
+function blend_app_signup_form() { ?>
 
-    $modifiers = array(
-        'free',
-        'premium',
-        'cheap',
-        'affordable',
-        'local',
-        'top',
-        'best',
-        'professional',
-        'pro',
-        'minimal',
-        'simple',
-        'easy',
-        'fast',
-        'coolest',
-        'find',
-        'buy',
-        'reviews',
-        'legit',
-        'scam',
-        'online',
-        'coupons',
-        'clearance',
-        'photos',
-        'images',
-        'pics',
-        'guide',
-        'tutorial',
-        'help',
-        'new',
-        'latest',
-        'hot',
-        'popular',
-        'different',
-        'creative',
-        'beautiful',
-        'natural',
-        'options',
-        'price',
-        'shop',
-        'store',
-        'alternative',
-        'competitor',
-        'rival',
-        '2015',
-        '2014',
-        '2013',
-        '2012'
-    );
+    <div id="mc_embed_signup">
+        <form action="//blendapp.us10.list-manage.com/subscribe/post?u=92c585bebdcda06856ba8ec9e&amp;id=f01e5cfeb3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group">
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="john@gmail.com">
+                </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_92c585bebdcda06856ba8ec9e_f01e5cfeb3" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+    </div>
 
-    if( $return == true ) {
-        return $modifiers;
-    }
-    else {
-        foreach( $modifiers as $modifier ) {
-            echo $modifier . "\n";
-        }
-    }
-}
+<?php }

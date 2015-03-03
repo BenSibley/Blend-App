@@ -27,7 +27,7 @@
 		<i class="fa fa-bars"></i>
 	</button>
 
-	<?php get_template_part( 'menu', 'primary' ); ?>
+<!--	--><?php //get_template_part( 'menu', 'primary' ); ?>
 
 </header>
 <section id="main" class="main" role="main">
