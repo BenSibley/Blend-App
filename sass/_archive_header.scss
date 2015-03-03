@@ -1,0 +1,40 @@
+.archive-header {
+  background: white;
+  padding: $baseline-height / 2 $column * 1.4545 0;
+  margin-bottom: $baseline-height * 1.5;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+
+  a {
+    display: inline-block;
+    margin: 0 $baseline-height $baseline-height / 2 0;
+    text-decoration: none;
+    color: $color-gray-medium;
+
+    &:link,
+    &:visited {
+      color: $color-gray-medium;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-gray-medium;
+    }
+    &.current {
+      font-weight: 700;
+      color: white;
+      background: $color-green-medium;
+      padding: 4px 12px;
+      border-radius: 24px;
+
+      &:link,
+      &:visited {
+        color: white;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        color: white;
+      }
+    }
+  }
+}

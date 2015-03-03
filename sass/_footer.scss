@@ -1,0 +1,69 @@
+.site-footer {
+  text-align: center;
+  clear: both;
+  background: #0f1e29;
+
+  .last-call {
+    background: $color-blue-dark;
+    padding: $baseline-height * 1.5 $column * 2;
+
+    h3 {
+      margin-bottom: 24px;
+      color: white;
+      display: inline-block;
+      margin-right: 12px;
+    }
+    input {
+      outline: none !important;
+      max-width: 300px !important;
+
+      &[type="email"] {
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .contact-us {
+    padding: $baseline-height / 2;
+
+    p {
+      margin: 0;
+    }
+  }
+  .button {
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.5;
+    background: $color-green-medium;
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: white;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: white;
+      background: $color-green-light;
+    }
+  }
+}
+
+//600px
+@media all and (min-width: 37.5em) {
+
+  .last-call {
+
+    input {
+
+      &[type="email"] {
+        max-width: 300px !important;
+      }
+      &[type="submit"] {
+        max-width: 100px !important;
+      }
+    }
+  }
+}

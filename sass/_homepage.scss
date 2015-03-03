@@ -1,0 +1,265 @@
+.page-template-homepage {
+
+  .overflow-container {
+    height: 100vh;
+  }
+  .site-footer {
+    display: none;
+  }
+  input[type='submit'] {
+    max-width: 310px;
+    margin-top: 6px;
+  }
+}
+.intro {
+  margin-top: $baseline-height;
+  text-align: center;
+  color: white;
+
+  h1 {
+    @extend %thirty-seven-pixels;
+  }
+  h3 {
+    margin-bottom: 24px;
+  }
+  p {
+    max-width: 660px;
+    color: $color-gray-light;
+    margin: $baseline-height auto;
+  }
+  label {
+    display: block;
+    color: white;
+    margin-top: $baseline-height / 2;
+  }
+  .signup-form {
+    margin-top: $baseline-height * 2;
+
+    input {
+      outline: none !important;
+    }
+    .button {
+      display: inline-block;
+      font-size: 1em;
+      line-height: 1.5;
+      background: $color-green-medium;
+      color: white;
+      padding: 6px 20px;
+      text-decoration: none;
+
+      &:link,
+      &:visited {
+        color: white;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        color: white;
+        background: $color-green-light;
+      }
+    }
+  }
+}
+.primary-image {
+  margin-top: $baseline-height * 2;
+  width: 100%;
+  box-shadow: 0 0 48px 0 rgba(0,0,0,0.4);
+}
+.benefits {
+  position: relative;
+  z-index: 9;
+  margin-top: -6px;
+  background: $color-blue-medium;
+  text-align: center;
+  color: white;
+  padding: 0 $baseline-height;
+
+  h1 {
+    @extend %twenty-eight-pixels;
+  }
+  h2 {
+    @extend %twenty-one-pixels;
+    font-weight: 600;
+  }
+  ul {
+    list-style: none;
+    margin: $baseline-height 0;
+  }
+  li {
+    margin: $baseline-height * 2 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  p {
+    color: $color-off-white;
+  }
+  svg {
+    margin-bottom: $baseline-height;
+  }
+}
+// required specificity
+#benefits,
+#features {
+  padding-top: $baseline-height;
+  padding-bottom: $baseline-height * 1.5;
+}
+.features {
+  text-align: center;
+  background: white;
+  padding: 0 $baseline-height;
+
+  h1 {
+    @extend %twenty-eight-pixels;
+  }
+  h2 {
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  p {
+    color: $color-blue-medium;
+  }
+  ul {
+    list-style: none;
+    margin: $baseline-height * 1.5 0 0;
+  }
+  li {
+    margin: $baseline-height 0;
+  }
+}
+.last-call {
+  background: $color-blue-medium;
+  color: white;
+  text-align: center;
+
+  h1 {
+    @extend %twenty-one-pixels;
+  }
+  label {
+    display: none;
+  }
+  .signup-form {
+    margin-top: $baseline-height;
+  }
+  input {
+    background: white;
+    border: none;
+  }
+  input[type="submit"] {
+    background: $color-green-medium; // to override above CSS
+
+    &:hover {
+      background: $color-green-light;
+    }
+  }
+}
+//.max-width {
+//  width: 87.5%;
+//  max-width: 1120px;
+//  margin: 0 auto;
+//}
+
+// 600px
+@media all and (min-width: 37.5em) {
+
+  .benefits {
+
+    ul {
+      margin: $baseline-height * 2 0 $baseline-height;
+    }
+    // 1.14 modifier since parent is 87.5% of screen width
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: $column * 9 * 1.1;
+      margin: 0;
+
+      &:first-child {
+        margin-top: 24px; // icon 24px shorter than others
+      }
+      &:nth-child(2) {
+        margin: 0 $column / 2;
+      }
+    }
+  }
+  // required specificity
+  #benefits,
+  #features {
+    padding-top: $baseline-height * 2;
+    padding-bottom: $baseline-height * 2.5;
+  }
+  .features {
+
+    ul {
+      margin: $baseline-height * 2.5 0 0;
+      text-align: left;
+    }
+    // 1.14 modifier since parent is 87.5% of screen width
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: $column * 8 * 1.1;
+      margin: 0;
+
+      &:nth-child(3n - 2),
+      &:nth-child(3n - 1) {
+        margin-right: $column * 2 * 1.1;
+        margin-bottom: $baseline-height;
+      }
+    }
+  }
+  .page-template-homepage {
+
+    input[type='submit'] {
+      max-width: 100px;
+      margin-top: 0;
+    }
+  }
+}
+
+// 900px
+@media all and (min-width: 56.25em) {
+
+  .page-template-homepage {
+
+    .main,
+    .site-footer {
+      width: 100%;
+    }
+    .main {
+      padding: 0;
+    }
+  }
+}
+
+// 1000px
+@media all and (min-width: 62.5em) {
+
+  .intro {
+    margin-top: $baseline-height * 2;
+
+    h1 {
+      font-size: 3em; // 48px
+      line-height: 1.25em; // 60px
+    }
+  }
+  .primary-image {
+    margin-top: $baseline-height * 3;
+  }
+  .benefits {
+
+    h1 {
+      font-size: 2.3125em; // 37px
+      line-height: 1.297em; // 48px
+    }
+  }
+  .features {
+
+    h1 {
+      font-size: 2.3125em; // 37px
+      line-height: 1.297em; // 48px
+    }
+  }
+}
