@@ -8,7 +8,7 @@
 
 <section id="intro" class="intro">
 	<h1>Your Stripe Data in Helpscout</h1>
-	<p>Blend integrates your Stripe data with Helpscout, so you know who you're talking to, instantly.</p>
+	<p>Blendapp.io integrates your Stripe customer data with Helpscout, so you can provide more personal support, faster</p>
 	<div class="signup-form">
 		<img class="stripe-helpscout" src="<?php echo trailingslashit(get_template_directory_uri()); ?>assets/images/stripe-helpscout.png" />
 		<?php echo blend_app_signup_form(); ?>
