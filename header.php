@@ -23,11 +23,11 @@
 		<?php get_template_part('logo')  ?>
 	</div>
 
-<!--	<button id="toggle-navigation" class="toggle-navigation">-->
-<!--		<i class="fa fa-bars"></i>-->
-<!--	</button>-->
+	<button id="toggle-navigation" class="toggle-navigation">
+		<i class="fa fa-bars"></i>
+	</button>
 
-<!--	--><?php //get_template_part( 'menu', 'primary' ); ?>
+	<?php get_template_part( 'menu', 'primary' ); ?>
 
 </header>
 <section id="main" class="main" role="main">
