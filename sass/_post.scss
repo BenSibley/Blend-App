@@ -15,7 +15,7 @@
     padding: 0 $column * 1.4545 $baseline-height;
   }
 }
-.singular-post,
+.singular,
 .error-404 {
 
   .entry {
@@ -147,7 +147,7 @@
 // 600px
 @media all and (min-width: 37.5em) {
 
-  .singular-post,
+  .singular,
   .error-404 {
 
     .post-date {
@@ -178,7 +178,7 @@
 @media all and (min-width: 700px) {
 
 
-  .singular-post,
+  .singular,
   .error-404 {
 
     .post-content {
@@ -251,7 +251,7 @@
 // 900px
 @media all and (min-width: 56.25em) {
 
-  .singular-post,
+  .singular,
   .error-404 {
 
     .post-header {
@@ -271,7 +271,7 @@
 
 @media all and (min-width: 1100px) {
 
-  .singular-post,
+  .singular,
   .error-404 {
 
     .post-content {

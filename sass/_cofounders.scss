@@ -1,0 +1,33 @@
+.co-founders {
+  margin: 48px 0;
+  border-radius: 12px;
+
+  img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin: 0;
+    float: none;;
+  }
+  div {
+    display: inline-block;
+    text-align: center;
+    padding: 24px 24px 48px;
+    border: solid 1px $color-gray-light;
+
+    &:first-child {
+      margin-right: 24px;
+    }
+  }
+  span {
+    display: block;
+    font-weight: 600;
+
+    span {
+      @extend %twelve-pixels;
+      display: block;
+      font-style: italic;
+      font-weight: 300;
+    }
+  }
+}

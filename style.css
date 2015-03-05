@@ -43,7 +43,7 @@ h3, .social-media-icons a, .search-sidebar i {
   /* 18px */
 }
 
-.post-date, .intro .signup-form p {
+.post-date, .intro .signup-form p, .co-founders span span {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -73,7 +73,7 @@ body {
   padding: 0;
   font-family: "Exo 2", sans-serif;
   line-height: 1.5;
-  color: #8d9499;
+  color: #536573;
   background: #152b3c;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
@@ -542,12 +542,12 @@ a img {
   padding: 0 4.54531% 1.5em;
 }
 
-.singular-post .entry article,
+.singular .entry article,
 .error-404 .entry article {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   background: white;
 }
-.singular-post .post-header,
+.singular .post-header,
 .error-404 .post-header {
   padding: 1.5em 4.54531% 0;
   text-align: center;
@@ -555,11 +555,11 @@ a img {
   z-index: 9;
   box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.05);
 }
-.singular-post .post-content,
+.singular .post-content,
 .error-404 .post-content {
   padding: 0 4.54531% 1.5em;
 }
-.singular-post .post-content h1, .singular-post .post-content h2, .singular-post .post-content h3, .singular-post .post-content h4, .singular-post .post-content h5, .singular-post .post-content h6,
+.singular .post-content h1, .singular .post-content h2, .singular .post-content h3, .singular .post-content h4, .singular .post-content h5, .singular .post-content h6,
 .error-404 .post-content h1,
 .error-404 .post-content h2,
 .error-404 .post-content h3,
@@ -568,13 +568,13 @@ a img {
 .error-404 .post-content h6 {
   font-weight: 600;
 }
-.singular-post .post-content p,
+.singular .post-content p,
 .error-404 .post-content p {
   font-size: 1.125em;
   line-height: 1.56;
   font-weight: 300;
 }
-.singular-post .post-content .downloads,
+.singular .post-content .downloads,
 .error-404 .post-content .downloads {
   background: #f0f4f7;
   border: solid 1px #b3bec7;
@@ -672,12 +672,12 @@ a img {
 }
 
 @media all and (min-width: 37.5em) {
-  .singular-post .post-date,
+  .singular .post-date,
   .error-404 .post-date {
     line-height: 36px;
     vertical-align: top;
   }
-  .singular-post .entry,
+  .singular .entry,
   .error-404 .entry {
     margin-top: 0.75em;
   }
@@ -694,7 +694,7 @@ a img {
   }
 }
 @media all and (min-width: 700px) {
-  .singular-post .post-content,
+  .singular .post-content,
   .error-404 .post-content {
     padding: 0 9.09062% 1.5em;
   }
@@ -771,25 +771,25 @@ a img {
   }
 }
 @media all and (min-width: 56.25em) {
-  .singular-post .post-header,
+  .singular .post-header,
   .error-404 .post-header {
     padding: 1.5em 9.09062% 0;
   }
-  .singular-post .post-header h1,
+  .singular .post-header h1,
   .error-404 .post-header h1 {
     font-size: 2.3125em;
     /* 37px / 16px */
     line-height: 1.378;
     /* 51px */
   }
-  .singular-post .post-content,
+  .singular .post-content,
   .error-404 .post-content {
     padding: 0 13.63594% 1.5em;
     margin: 0 auto;
   }
 }
 @media all and (min-width: 1100px) {
-  .singular-post .post-content,
+  .singular .post-content,
   .error-404 .post-content {
     padding: 0 18.18125% 1.5em;
     margin: 0 auto;
@@ -1307,4 +1307,34 @@ li.comment ul {
 }
 .archive-header a.current:hover, .archive-header a.current:active, .archive-header a.current:focus {
   color: white;
+}
+
+.co-founders {
+  margin: 48px 0;
+  border-radius: 12px;
+}
+.co-founders img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin: 0;
+  float: none;
+}
+.co-founders div {
+  display: inline-block;
+  text-align: center;
+  padding: 24px 24px 48px;
+  border: solid 1px #b3bec7;
+}
+.co-founders div:first-child {
+  margin-right: 24px;
+}
+.co-founders span {
+  display: block;
+  font-weight: 600;
+}
+.co-founders span span {
+  display: block;
+  font-style: italic;
+  font-weight: 300;
 }
