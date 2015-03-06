@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 
 <section id="intro" class="intro">
-	<h1>Continuous Stripe Integration for Help Scout</h1>
+	<h1>Stripe Integration for Help Scout</h1>
 <!--	<h1>Provide More Personal Support, Faster</h1>-->
 	<p>Blendapp.io integrates your Stripe customer data with Help Scout, so you can provide more personal support, faster</p>
 	<div class="signup-form">
