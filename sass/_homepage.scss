@@ -71,6 +71,16 @@
       margin: 12px auto 0;
     }
   }
+  .primary-image-caption {
+    position: absolute;
+    bottom: 0;
+    max-width: none;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: $baseline-height / 2 $baseline-height;
+    @extend %twelve-pixels;
+  }
 }
 .primary-image {
   margin-top: $baseline-height * 1.5;
@@ -152,6 +162,10 @@
     .signup-form {
       left: -17%;
       width: 134%;
+    }
+    .primary-image-caption {
+      font-size: 1em;
+      line-height: 1.5;
     }
   }
 }

@@ -43,7 +43,7 @@ h3, .social-media-icons a, .search-sidebar i {
   /* 18px */
 }
 
-.post-date, .intro .signup-form p, .co-founders span span {
+.post-date, .intro .signup-form p, .intro .primary-image-caption, .co-founders span span {
   font-size: 0.75em;
   /* 12px / 16px */
   line-height: 1.5;
@@ -1201,6 +1201,15 @@ li.comment ul {
 .intro .signup-form p {
   margin: 12px auto 0;
 }
+.intro .primary-image-caption {
+  position: absolute;
+  bottom: 0;
+  max-width: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.75em 1.5em;
+}
 
 .primary-image {
   margin-top: 2.25em;
@@ -1263,6 +1272,10 @@ li.comment ul {
   .intro .signup-form {
     left: -17%;
     width: 134%;
+  }
+  .intro .primary-image-caption {
+    font-size: 1em;
+    line-height: 1.5;
   }
 }
 @media all and (min-width: 68.75em) {
