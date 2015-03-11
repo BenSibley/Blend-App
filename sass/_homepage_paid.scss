@@ -1,0 +1,148 @@
+.page-template-homepaid {
+  font-weight: 300;
+
+  .overflow-container {
+    background: $color-blue-light;
+  }
+  section {
+    padding: $baseline-height * 2 0;
+  }
+  .heading {
+    text-align: center;
+
+    h1,
+    h2 {
+      font-weight: 600;
+      @extend %thirty-seven-pixels;
+    }
+    p {
+      color: $color-gray-medium;
+      margin: $baseline-height / 2 0 $baseline-height * 2;
+    }
+  }
+  .top {
+    padding-top: 0;
+    text-align: center;
+    padding-bottom: 0;
+    color: white;
+
+    p {
+      color: $color-gray-light;
+    }
+    .button {
+      display: inline-block;
+      padding: 5px 24px;
+      text-decoration: none;
+      color: white;
+      border: solid 1px white;
+
+      &:link,
+      &:visited {
+        color: white;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        color: white;
+      }
+    }
+    .sign-up {
+      border-color: $color-green-medium;
+      margin-right: 20px;
+    }
+  }
+  .benefit-1 {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: -999px;
+      bottom: 0;
+      left: -999px;
+      background: $color-yellow;
+    }
+    .message {
+      background: white;
+      box-shadow: 0 -1px 2px 0 rgba(0,0,0,0.1);
+      border-left: solid 4px $color-gray-light;
+      padding: $baseline-height / 2 $column;
+
+      img {
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin-right: $baseline-height / 2;
+      }
+      span {
+        font-weight: 600;
+        color: $text;
+      }
+    }
+    .user {
+
+      p {
+        margin: 0 0 $baseline-height / 2;
+        color: $color-gray-medium;
+      }
+    }
+    .question {
+      border-top: solid 1px $color-off-white;
+
+      p:first-child {
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      p:last-child {
+        color: $color-gray-medium;
+        @extend %twelve-pixels;
+        margin-top: 0;
+      }
+    }
+    .steps {
+      position: relative;
+      background: white;
+      box-shadow: 0 -1px 2px 0 rgba(0,0,0,0.1);
+      padding: $baseline-height $column;
+      margin: $baseline-height 0;
+
+      h3 {
+        font-weight: 600;
+      }
+      ol {
+        margin-bottom: $baseline-height / 2;
+      }
+      img {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: $baseline-height;
+        right: $column;
+      }
+    }
+    .with-blendapp {
+
+      img {
+        height: 26px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: $four-hundred) {
+
+  .page-template-homepaid {
+
+    .benefit-1 {
+
+      .message {
+
+        span {
+          line-height: 60px;
+        }
+      }
+    }
+  }
+}

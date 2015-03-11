@@ -15,7 +15,7 @@ body {
   font-family: $primary-font-stack;
   line-height: 1.5;
   color: $text;
-  background: $color-blue-dark;
+  background: $color-blue-medium-dark;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word;
   -ms-word-wrap: break-word;
@@ -28,7 +28,7 @@ body {
   overflow: hidden;
   height: auto;
   min-height: 100%;
-  background: $color-blue-medium-dark;
+  background: $color-blue-medium;
   padding: 0 $column;
   max-width: 1314px;
   margin: 0 auto;

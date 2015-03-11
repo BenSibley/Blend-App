@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-	<section id="intro" class="intro">
+	<section id="top" class="top">
 		<div class="heading">
 			<h1>Stripe Integration for Help Scout</h1>
 			<p>Blendapp.io integrates your Stripe customer data with Help Scout, so you can provide more personal support, faster.</p>
@@ -22,7 +22,7 @@
 		</div>
 		<div class="message">
 			<div class="user">
-				<img src="" />
+				<img src="<?php echo get_template_directory_uri() . '/assets/images/sarah.png'; ?>" />
 				<p><span>Sarah</span> started the conversation</p>
 			</div>
 			<div class="question">
@@ -30,9 +30,9 @@
 				<p>Hey, I just purchased, but I never received my download...?</p>
 			</div>
 		</div>
-		<div class="without-blendapp">
+		<div class="steps without-blendapp">
 			<h3>Without Blendapp.io</h3>
-			<img src="" />
+			<img src="<?php echo get_template_directory_uri() . '/assets/images/cancel.png'; ?>" />
 			<ol>
 				<li>Copy customer's email</li>
 				<li>Go to stripe.com</li>
@@ -43,9 +43,9 @@
 				<li>Resend download</li>
 			</ol>
 		</div>
-		<div class="with-blendapp">
+		<div class="steps with-blendapp">
 			<h3>With Blendapp.io</h3>
-			<img src="" />
+			<img src="<?php echo get_template_directory_uri() . '/assets/images/checkmark.png'; ?>" />
 			<ol>
 				<li>Verify payment was received</li>
 				<li>Resend download</li>
