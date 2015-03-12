@@ -60,21 +60,25 @@
 		<div class="features">
 			<ul>
 				<li>
+					<img class="icon" src="<?php echo get_template_directory_uri() . '/assets/images/calendar-icon.png'; ?>" />
 					<h3>Trial-end dates</h3>
 					<p>Offer extended trials to users who haven't upgraded and are near the end of their trial.</p>
 					<span>+ Conversions</span>
 				</li>
 				<li>
+					<img class="icon" src="<?php echo get_template_directory_uri() . '/assets/images/line-graph-icon.png'; ?>" />
 					<h3>Recent Purchases</h3>
 					<p>Recommend annual subscriptions and savings based on customers' recent purchases.</p>
 					<span>+ Cash flow</span>
 				</li>
 				<li>
+					<img class="icon" src="<?php echo get_template_directory_uri() . '/assets/images/clock-icon.png'; ?>" />
 					<h3>Soon-to-expire Credit Cards</h3>
 					<p>Notify a customer if their credit card will expire soon, so they don't miss a payment.</p>
 					<span>+ Revenue</span>
 				</li>
 				<li>
+					<img class="icon" src="<?php echo get_template_directory_uri() . '/assets/images/heart-icon.png'; ?>" />
 					<h3>"Customer since" dates</h3>
 					<p>Recognize long-time customers, and show them your appreciation.</p>
 					<span>+ Loyalty</span>
