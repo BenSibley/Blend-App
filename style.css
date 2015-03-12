@@ -30,7 +30,7 @@ h2, .post-title, .comments-number h3, .comment-reply-title {
   /* 37px */
 }
 
-h3, .social-media-icons a, .search-sidebar i {
+h3, .social-media-icons a, .search-sidebar i, .page-template-homepaid .how-it-works .document h4 {
   font-size: 1.3125em;
   /* 21px / 16px */
   line-height: 1.143;
@@ -51,7 +51,7 @@ h3, .social-media-icons a, .search-sidebar i {
   /* 18px */
 }
 
-.menu-primary a {
+.menu-primary a, .page-template-homepaid .how-it-works .document h3 {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 400;
@@ -1494,6 +1494,7 @@ li.comment ul {
 }
 .page-template-homepaid .benefit-2 li p {
   margin: 0.75em 0;
+  color: #8d9499;
 }
 .page-template-homepaid .benefit-2 img {
   height: 48px;
@@ -1506,10 +1507,129 @@ li.comment ul {
 .page-template-homepaid .benefit-2 span {
   color: #59b390;
 }
+.page-template-homepaid .how-it-works {
+  padding-bottom: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.page-template-homepaid .how-it-works .heading h2 {
+  color: white;
+}
+.page-template-homepaid .how-it-works .heading p {
+  color: #b3bec7;
+}
+.page-template-homepaid .how-it-works .document {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5em 3.125%;
+}
+.page-template-homepaid .how-it-works .document:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-right: solid 48px #536573;
+  border-bottom: solid 48px transparent;
+}
+.page-template-homepaid .how-it-works .document:before {
+  content: '';
+  position: absolute;
+  top: 48px;
+  left: 100%;
+  bottom: 0;
+  border-left: solid 400px #485763;
+  border-top: solid 400px transparent;
+}
+.page-template-homepaid .how-it-works .document h3 {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #b3bec7;
+  border-bottom: solid 1px #f0f4f7;
+  padding-bottom: 1.5em;
+}
+.page-template-homepaid .how-it-works .document ol {
+  position: relative;
+  list-style: none;
+  margin: 1.5em 0 3em;
+}
+.page-template-homepaid .how-it-works .document ol:after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  bottom: 12px;
+  width: 2px;
+  background: #dbdbdb;
+}
+.page-template-homepaid .how-it-works .document li {
+  margin: 1.5em 0;
+}
+.page-template-homepaid .how-it-works .document h4 {
+  font-weight: 700;
+}
+.page-template-homepaid .how-it-works .document p {
+  color: #8d9499;
+  margin: 6px 0 0;
+}
+.page-template-homepaid .how-it-works .document .dog-ear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: solid 48px #E6E6E6;
+  border-top: solid 48px transparent;
+}
+.page-template-homepaid .how-it-works .icon {
+  position: relative;
+  z-index: 9;
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin: 0 0.75em 1.5em 0;
+}
+.page-template-homepaid .pricing {
+  position: relative;
+  z-index: 19;
+  margin-top: -12px;
+}
+.page-template-homepaid .pricing:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -999px;
+  bottom: 0;
+  left: -999px;
+  background: white;
+}
 
 @media all and (min-width: 25em) {
   .page-template-homepaid .benefit-1 .message span {
     line-height: 60px;
+  }
+}
+@media all and (min-width: 37.5em) {
+  .page-template-homepaid .how-it-works .document {
+    padding: 1.5em 6.25%;
+  }
+  .page-template-homepaid .how-it-works .document:after {
+    border-right: solid 60px #536573;
+    border-bottom: solid 60px transparent;
+  }
+  .page-template-homepaid .how-it-works .document:before {
+    top: 60px;
+  }
+  .page-template-homepaid .how-it-works .document .dog-ear {
+    border-left: solid 60px #E6E6E6;
+    border-top: solid 60px transparent;
+  }
+  .page-template-homepaid .how-it-works .icon {
+    margin-right: 1.5em;
   }
 }
 @media all and (min-width: 50em) {
@@ -1544,6 +1664,29 @@ li.comment ul {
   }
   .page-template-homepaid .benefit-2 li:nth-child(odd) {
     margin-right: 4%;
+  }
+  .page-template-homepaid .how-it-works .document {
+    padding: 1.5em 9.375%;
+  }
+  .page-template-homepaid .how-it-works .document:before {
+    top: 96px;
+  }
+  .page-template-homepaid .how-it-works .document:after {
+    border-right: solid 96px #536573;
+    border-bottom: solid 96px transparent;
+  }
+  .page-template-homepaid .how-it-works .document .dog-ear {
+    border-left: solid 96px #E6E6E6;
+    border-top: solid 96px transparent;
+  }
+  .page-template-homepaid .how-it-works .document h3 {
+    margin-right: 45px;
+  }
+  .page-template-homepaid .how-it-works .document li {
+    margin-bottom: 3em;
+  }
+  .page-template-homepaid .how-it-works .document ol {
+    margin-bottom: 6em;
   }
 }
 @media all and (min-width: 59.375em) {

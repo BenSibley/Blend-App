@@ -92,21 +92,26 @@
 			<p>You're about 3 minutes away from Stripe data in your Help Scout dashboard</p>
 		</div>
 		<div class="document">
+			<div class="dog-ear"></div>
 			<h3>How it Works</h3>
 			<ol>
 				<li>
+					<img class="icon" src="<?php echo get_template_directory_uri() . '/assets/images/1-circle.png'; ?>" />
 					<h4>Create an Account</h4>
 					<p>All we need is an email and password.</p>
 				</li>
 				<li>
+					<img class="icon" src="<?php echo get_template_directory_uri() . '/assets/images/2-circle.png'; ?>" />
 					<h4>Connect with Stripe</h4>
 					<p>We've got a shiny blue button waiting for you.</p>
 				</li>
 				<li>
+					<img class="icon" src="<?php echo get_template_directory_uri() . '/assets/images/3-circle.png'; ?>" />
 					<h4>Add to Help Scout</h4>
 					<p>We'll give you a special URL to paste into your Help Scout dashboard.</p>
 				</li>
 				<li>
+					<img class="icon" src="<?php echo get_template_directory_uri() . '/assets/images/checkmark-circle.png'; ?>" />
 					<p>All new and previous customer emails now display your Stripe customer data.</p>
 				</li>
 			</ol>
