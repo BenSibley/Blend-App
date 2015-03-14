@@ -2,7 +2,7 @@
   font-weight: 300;
 
   .overflow-container {
-    background: $color-blue-light;
+    background: $color-blue-medium;
   }
   section {
     padding: $baseline-height * 2 0;
@@ -46,11 +46,21 @@
       &:active,
       &:focus {
         color: white;
+        background: $color-green-medium;
       }
     }
     .sign-up {
       border-color: $color-green-medium;
       margin-right: 20px;
+    }
+    .learn-more {
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: white;
+        color: $color-blue-medium-dark;
+      }
     }
   }
   .benefit-1 {
@@ -66,7 +76,7 @@
       right: -999px;
       bottom: 0;
       left: -999px;
-      background: $color-yellow;
+      background: $color-gray-93;
     }
     .message {
       background: white;

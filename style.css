@@ -1357,7 +1357,7 @@ li.comment ul {
   font-weight: 300;
 }
 .page-template-homepaid .overflow-container {
-  background: #536573;
+  background: #304657;
 }
 .page-template-homepaid section {
   padding: 3em 0;
@@ -1396,10 +1396,15 @@ li.comment ul {
 }
 .page-template-homepaid .top .button:hover, .page-template-homepaid .top .button:active, .page-template-homepaid .top .button:focus {
   color: white;
+  background: #59b390;
 }
 .page-template-homepaid .top .sign-up {
   border-color: #59b390;
   margin-right: 20px;
+}
+.page-template-homepaid .top .learn-more:hover, .page-template-homepaid .top .learn-more:active, .page-template-homepaid .top .learn-more:focus {
+  background: white;
+  color: #273947;
 }
 .page-template-homepaid .benefit-1 {
   position: relative;
@@ -1414,7 +1419,7 @@ li.comment ul {
   right: -999px;
   bottom: 0;
   left: -999px;
-  background: #f0ddaa;
+  background: #e6eaed;
 }
 .page-template-homepaid .benefit-1 .message {
   background: white;

@@ -11,8 +11,8 @@
 			<h1>Stripe Integration for Help Scout</h1>
 			<p>Blendapp.io integrates your Stripe customer data with Help Scout, so you can provide more personal support, faster.</p>
 		</div>
-		<a class="button sign-up" href="#">Sign up</a>
-		<a class="button learn-more" href="#">Learn More</a>
+		<a class="button sign-up" href="https://app.blendapp.io">Sign up</a>
+		<a id="learn-more" class="button learn-more" href="#benefit-1">Learn More</a>
 		<img class="primary-image" src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/primary-image.png'; ?>" />
 	</section>
 	<section id="benefit-1" class="benefit-1">
