@@ -16,7 +16,7 @@ The Blend App Theme is distributed under the terms of the GNU GPL
 /***** Mixins *****/
 /***** Silent Classes *****/
 h1, .intro h1, .page-template-homepaid .heading h1,
-.page-template-homepaid .heading h2 {
+.page-template-homepaid .heading h2, .page-template-homepaid .pricing .purchase-form h3 {
   font-size: 2.3125em;
   /* 37px / 16px */
   line-height: 1.378;
@@ -1513,9 +1513,20 @@ li.comment ul {
   color: #59b390;
 }
 .page-template-homepaid .how-it-works {
+  position: relative;
   padding-bottom: 0;
   max-width: 800px;
   margin: 0 auto;
+}
+.page-template-homepaid .how-it-works:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -999px;
+  bottom: 0;
+  left: -999px;
+  background: #536573;
 }
 .page-template-homepaid .how-it-works .heading h2 {
   color: white;
@@ -1601,6 +1612,8 @@ li.comment ul {
   position: relative;
   z-index: 19;
   margin-top: -12px;
+  text-align: center;
+  padding-bottom: 4.5em;
 }
 .page-template-homepaid .pricing:before {
   content: '';
@@ -1610,7 +1623,73 @@ li.comment ul {
   right: -999px;
   bottom: 0;
   left: -999px;
+  background-image: url("/wp-content/themes/blend-app/assets/images/debut_light.png");
+}
+.page-template-homepaid .pricing .purchase-form {
   background: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 1.5em 1.5em 2.25em;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.page-template-homepaid .pricing .purchase-form h3 {
+  font-weight: 700;
+}
+.page-template-homepaid .pricing .purchase-form p {
+  margin: 0;
+  color: #8d9499;
+}
+.page-template-homepaid .pricing .purchase-form p:last-child {
+  font-weight: 700;
+  color: #536573;
+}
+.page-template-homepaid .pricing .purchase-form a {
+  display: inline-block;
+  background: #59b390;
+  padding: 0.75em 1.5em;
+  margin: 1.5em 0;
+  text-decoration: none;
+  color: white;
+}
+.page-template-homepaid .pricing .purchase-form a:link, .page-template-homepaid .pricing .purchase-form a:visited {
+  color: white;
+}
+.page-template-homepaid .pricing .purchase-form a:hover, .page-template-homepaid .pricing .purchase-form a:active, .page-template-homepaid .pricing .purchase-form a:focus {
+  color: white;
+  background: #61c29d;
+}
+.page-template-homepaid .pricing > p {
+  margin: 0.75em 0;
+  color: #8d9499;
+}
+.page-template-homepaid .faq {
+  position: relative;
+}
+.page-template-homepaid .faq:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -999px;
+  bottom: 0;
+  left: -999px;
+  background: white;
+}
+.page-template-homepaid .faq ul {
+  list-style: none;
+  margin: 3em 0;
+}
+.page-template-homepaid .faq li {
+  margin-bottom: 1.5em;
+}
+.page-template-homepaid .faq h3 {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.page-template-homepaid .faq p {
+  margin: 0.75em 0;
+  color: #8d9499;
 }
 
 @media all and (min-width: 25em) {
@@ -1714,6 +1793,9 @@ li.comment ul {
     border-right: solid 1px #f0f4f7;
     margin-right: 1.5em;
     padding-right: 1.5em;
+  }
+  .page-template-homepaid .how-it-works li:last-child p {
+    padding-top: 0.75em;
   }
 }
 @media all and (min-width: 75em) {

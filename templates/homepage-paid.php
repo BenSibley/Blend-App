@@ -11,7 +11,7 @@
 			<h1>Stripe Integration for Help Scout</h1>
 			<p>Blendapp.io integrates your Stripe customer data with Help Scout, so you can provide more personal support, faster.</p>
 		</div>
-		<a class="button sign-up" href="https://app.blendapp.io">Sign up</a>
+		<a class="button sign-up" href="https://app.blendapp.io/#/signup">Sign up</a>
 		<a id="learn-more" class="button learn-more" href="#benefit-1">Learn More</a>
 		<img class="primary-image" src="<?php echo trailingslashit(get_template_directory_uri()) . 'assets/images/primary-image.png'; ?>" />
 	</section>
@@ -125,7 +125,7 @@
 		<div class="purchase-form">
 			<h3>$9/month</h3>
 			<p>Save time while you WOW your customers</p>
-			<a href="#">Sign up Now</a>
+			<a href="https://app.blendapp.io/#/signup">Sign up Now</a>
 			<p>Try it out, risk-free for 60 days.</p>
 		</div>
 		<p>Improve the speed and quality of your support for less than $0.30/day</p>
@@ -156,7 +156,7 @@
 				<p>If you're not satisfied, for any reason at all, within 60 days of your initial purchase, we will fully refund your payment. No questions asked.</p>
 			</li>
 		</ul>
-		<p><a href="">Okay, got it! I'm ready to buy</a></p>
+		<p><a id="ready-to-buy" href="#pricing">Okay, got it! I'm ready to buy</a></p>
 		<p>If you have any other questions, or want deeper insight on any topic, please contact us at team@blendapp.io</p>
 	</section>
 <?php get_footer(); ?>

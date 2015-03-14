@@ -97,6 +97,15 @@ jQuery(document).ready(function($){
         }, 1000);
         return false;
     }
+
+    $('#ready-to-buy').on('click', scrollUp);
+
+    function scrollUp() {
+        $('html,body').animate({
+            scrollTop: $('#pricing').offset().top
+        }, 1000);
+        return false;
+    }
 });
 /*
  * Adapted from: http://mikejolley.com/2012/12/using-the-new-wordpress-3-5-media-uploader-in-plugins/

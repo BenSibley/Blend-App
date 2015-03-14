@@ -184,10 +184,21 @@
     }
   }
   .how-it-works {
+    position: relative;
     padding-bottom: 0;
     max-width: 800px;
     margin: 0 auto;
 
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: -999px;
+      bottom: 0;
+      left: -999px;
+      background: $color-blue-light;
+    }
     .heading {
 
       h2 {
@@ -280,6 +291,66 @@
     position: relative;
     z-index: 19;
     margin-top: -12px;
+    text-align: center;
+    padding-bottom: $baseline-height * 3;
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: -999px;
+      bottom: 0;
+      left: -999px;
+      background-image: url('/wp-content/themes/blend-app/assets/images/debut_light.png');
+    }
+    .purchase-form {
+      background: white;
+      box-shadow: 0 0 10px 0 rgba(0,0,0, 0.1);
+      padding: $baseline-height $baseline-height $baseline-height * 1.5;
+      max-width: 640px;
+      margin: 0 auto;
+
+      h3 {
+        @extend %thirty-seven-pixels;
+        font-weight: 700;
+      }
+      p {
+        margin: 0;
+        color: $color-gray-medium;
+
+        &:last-child {
+          font-weight: 700;
+          color: $color-blue-light;
+        }
+      }
+      a {
+        display: inline-block;
+        background: $color-green-medium;
+        padding: $baseline-height / 2 $baseline-height;
+        margin: $baseline-height 0;
+        text-decoration: none;
+        color: white;
+
+        &:link,
+        &:visited {
+          color: white;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+          color: white;
+          background: $color-green-light;
+        }
+      }
+    }
+    > p {
+      margin: $baseline-height / 2 0;
+      color: $color-gray-medium;
+    }
+  }
+  .faq {
+    position: relative;
 
     &:before {
       content: '';
@@ -290,6 +361,22 @@
       bottom: 0;
       left: -999px;
       background: white;
+    }
+    ul {
+      list-style: none;
+      margin: $baseline-height * 2 0;
+    }
+    li {
+      margin-bottom: $baseline-height;
+    }
+    h3 {
+      font-size: 1em;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+    p {
+      margin: $baseline-height / 2 0;
+      color: $color-gray-medium;
     }
   }
 }
@@ -437,6 +524,18 @@
         border-right: solid 1px $color-off-white;
         margin-right: $baseline-height;
         padding-right: $baseline-height;
+      }
+    }
+    .how-it-works {
+
+      li {
+
+        &:last-child {
+
+          p {
+            padding-top: $baseline-height / 2;
+          }
+        }
       }
     }
   }
