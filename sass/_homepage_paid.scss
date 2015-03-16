@@ -4,6 +4,10 @@
   .overflow-container {
     background: $color-blue-medium;
   }
+  .main {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   section {
     padding: $baseline-height * 2 0;
   }

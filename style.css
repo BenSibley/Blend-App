@@ -1359,6 +1359,10 @@ li.comment ul {
 .page-template-homepaid .overflow-container {
   background: #304657;
 }
+.page-template-homepaid .main {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .page-template-homepaid section {
   padding: 3em 0;
 }
