@@ -128,13 +128,18 @@
 			<a href="https://app.blendapp.io/#/signup">Sign up Now</a>
 			<p>Try it out, risk-free for 60 days.</p>
 		</div>
-		<p>Improve the speed and quality of your support for less than $0.30/day</p>
+<!--		<p>Improve the speed and quality of your support for less than $0.30/day</p>-->
+		<p>*Blendapp.io currently requires a paid Help Scout account.</p>
 	</section>
 	<section id="faq" class="faq">
 		<div class="heading">
 			<h2>FAQ</h2>
 		</div>
 		<ul>
+			<li>
+				<h3>Q. Can I use this with a free Help Scout account?</h3>
+				<p>At the moment, Blendapp.io requires a paid Help Scout account.</p>
+			</li>
 			<li>
 				<h3>Q. Is this secure? I take my customer's data very seriously.</h3>
 				<p>We do too. That's why we use a secure, read-only connection to access your Stripe account.</p>
